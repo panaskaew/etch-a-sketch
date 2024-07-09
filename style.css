@@ -1,3 +1,31 @@
 * {
     background-color: grey;
+    margin: 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: green solid 3px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+}
+#container {
+    outline: 3px solid blue;
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+.tiles {
+    /* outline: red 1px solid; */
+    /* background-color: black; */
+    height: 5vh;
+    width: 5vh;
+}
+button {
+    background-color: white;
+    font-weight: 700;
 }
