@@ -13,6 +13,7 @@ body {
 }
 #container {
     outline: 3px solid blue;
+    background-color: grey;
     width: 80vh;
     height: 80vh;
     display: flex;
@@ -24,6 +25,7 @@ body {
     /* background-color: black; */
     height: 5vh;
     width: 5vh;
+    background-color: white;
 }
 button {
     background-color: white;

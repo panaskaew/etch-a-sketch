@@ -3,6 +3,9 @@ const body = document.querySelector('body')
 const container = document.querySelector('#container')
 const button = document.querySelector('button')
 const tiles = document.createElement('div') // make divs from scratch
+let randomHue = Math.round(Math.random() * 359)
+const startingLightness = 50
+// body.style.backgroundColor = `hsl(${hue}, 100%, ${lightness}%)`
 
     // console.log(allTiles.length);
 tiles.classList.add('tiles') // adding classes to said divs
@@ -26,7 +29,8 @@ function askForTiles() {
                 const clonedTiles = tiles.cloneNode()
                 container.appendChild(clonedTiles)
                 clonedTiles.addEventListener('mouseover', function() {
-                    this.style.backgroundColor = 'black'
+                    randomHue = Math.round(Math.random() * 359)
+                    this.style.backgroundColor = `hsl(${randomHue}, 100%, ${startingLightness}%)`
                 })
             }
             allTiles = document.querySelectorAll('.tiles') //ok
